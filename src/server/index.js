@@ -18,7 +18,7 @@ export const create =  ({
         handler: (req, h) => h.response().code(404)
     })
 
-    process.once(process.env.AUTO_NPX_CONTAINER_KILL_SIGNAL || 'SIGINT', () => {
+    process.once('SIGTERM', () => {
         console.log('draining server...')
         server.stop().then(() => {
             console.log('server down')
