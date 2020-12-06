@@ -1,6 +1,6 @@
 {
   "name": "ledsrv-test-docker-app",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "",
   "bin": "dist/index.js",
   "main": "dist/index.js",
